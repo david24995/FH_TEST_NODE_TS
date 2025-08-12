@@ -1,8 +1,8 @@
 // import { emailTemplate } from './js-foundation/01-template';
 // import './js-foundation/02-destructuring';
 // import { getUserById, users, IUser } from './js-foundation/03-callbacks';
-import { getAge, getUUID } from './plugins';
-import { buildMakePerson } from './js-foundation/05-factoring';
+// import { getAge, getUUID } from './plugins';
+// import { buildMakePerson } from './js-foundation/05-factoring';
 // import { emailTemplate } from './js-foundation/01-template';
 
 // import pokemonById from './js-foundation/06-promises';
@@ -25,6 +25,6 @@ import { buildMakePerson } from './js-foundation/05-factoring';
 
 //   console.log(user);
 // });
-const makePerson = buildMakePerson({ getUUID, getAge });
-const john = makePerson({ name: 'Jonh', birthday: '1985-10-21' });
-console.log(john);
+// const makePerson = buildMakePerson({ getUUID, getAge });
+// const john = makePerson({ name: 'Jonh', birthday: '1985-10-21' });
+// console.log(john);
