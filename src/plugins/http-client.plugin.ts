@@ -7,7 +7,13 @@ export const httpClientPlugin = {
     // const data = await resp.json();
     return resp.data;
   },
-  post: async (url: string, body: {}) => {},
-  put: async (url: string, body: {}) => {},
-  delete: async (url: string) => {},
+  post: async (url: string, body: {}) => {
+    throw new Error('Not implemented');
+  },
+  put: async (url: string, body: {}) => {
+    throw new Error('Not implemented');
+  },
+  delete: async (url: string) => {
+    throw new Error('Not implemented');
+  },
 };

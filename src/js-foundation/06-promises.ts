@@ -7,6 +7,10 @@ export const getPokemonById = async (id: string) => {
   //   .then((resp) => resp.json())
   //   .then((pokemon) => pokemon.name);
 
-  const pokemon = await httpClientPlugin.get(`${url}/pokemon/${id}`);
-  return pokemon.name;
+  try {
+    const pokemon = await httpClientPlugin.get(`${url}/pokemon/${id}`);
+    return pokemon.name;
+  } catch (err) {
+    throw new Error(`Pokemon not found with id ${id}`);
+  }
 };

@@ -1,12 +1,8 @@
-export const getAge = (birthday: string) => {
-  return obtenerEdad(birthday);
-};
-
-function obtenerEdad(dateString: string) {
-  var today = new Date();
-  var birthDate = new Date(dateString);
-  var age = today.getUTCFullYear() - birthDate.getUTCFullYear();
-  var month = today.getUTCMonth() - birthDate.getUTCMonth();
+export function getAge(dateString: string) {
+  const today = new Date();
+  const birthDate = new Date(dateString);
+  let age = today.getUTCFullYear() - birthDate.getUTCFullYear();
+  const month = today.getUTCMonth() - birthDate.getUTCMonth();
   if (
     month < 0 ||
     (month === 0 && today.getUTCDate() < birthDate.getUTCDate())
