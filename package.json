@@ -4,8 +4,8 @@
   "description": "Esta es mi primera aplicación de Node",
   "main": "app.js",
   "scripts": {
-    "build": "rimraf ./dist && tsc",
-    "start": "npm run build && node ./dist/.app.js",
+    "build": "npm run test && rimraf ./dist && tsc",
+    "start": "node ./dist/.app.js",
     "dev": "nodemon src/app.ts",
     "test": "jest",
     "test:watch": "jest --watch",
