@@ -1,4 +1,4 @@
-import { getUUID } from '../../../src/plugins/get-id.plugin';
+import { getUUID } from '../../../src/plugins';
 
 describe('plugins/get-id.plugin.ts', () => {
   it('getUUID() should return a UUID', () => {

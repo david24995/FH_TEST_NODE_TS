@@ -1,4 +1,4 @@
-import { getAge } from '../../../src/plugins/get-age.plugin';
+import { getAge } from '../../../src/plugins';
 
 describe('plugins/get-age.plugin.ts', () => {
   it('getAge() should return the age of a person', () => {
@@ -9,6 +9,7 @@ describe('plugins/get-age.plugin.ts', () => {
   });
 
   it('getAge() should return 0 years', () => {
+    // Para no tener problemas se debería congelar las fechas
     const spy = jest.spyOn(Date.prototype, 'getUTCDate').mockReturnValue(24);
 
     const birthDate = '1995-08-24';
